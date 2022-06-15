@@ -4,6 +4,9 @@ module.exports = {
     path: __dirname,
     filename: 'bundle.js'
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   mode: 'development',
   devtool: 'source-maps',
   module: {
