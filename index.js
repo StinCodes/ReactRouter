@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
 const Red = (props) => {
   return (
@@ -32,5 +32,5 @@ const Main = (props) => {
   )
 }
 
-const app = document.getElementById('app')
-ReactDOM.render(<Main />, app)
+const root = createRoot(document.getElementById('app'))
+root.render(<Main />)
